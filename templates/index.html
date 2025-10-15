@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block title %}
+Homepage
+{% endblock %}
+
+
+{% block content %}
+<div class="row">
+    <div class="col-6 text-start">  
+        <form action="/intro" method="get">
+            <button type="submit" class="btn btn-outline-dark w-100">
+                New Game
+            </button>
+        </form>
+    </div>
+    <div class="col-6 text-end">
+        <form action="/howto" method="get">
+            <button type="submit" class="btn btn-outline-secondary w-100">
+                How to Play
+            </button>
+        </form>
+    </div>
+</div>
+{% endblock %}
